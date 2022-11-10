@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+.App{
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+
+    .search{
+        width: 200px;
+        padding: 10px;
+    }
+}
+
+
+
+.search_block{
+    width: 1400px;
+    height: 800px;
+    border: 1px solid red;
+    margin: 80px auto ;
+}
+
+
+.repos_wrapper{
+    width: 100%;
+    
+    margin: 0px auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  
+
+    .repos{
+        width: 100%;
+        height: 80px;
+        border: 1px solid black;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+    }
+    
+}
+
+.users{
+    width: 1400px;
+    
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    padding: 10px;
+  
+    margin: 20px auto;
+    position: relative;
+}
+
+.follower{
+    display: flex;
+    span{
+        padding: 0px 20px;
+    }
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.users .profile{
+ 
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-left:80px;
+    flex-direction: column;
+    margin-top: -50px;
+    
+    
+    img{
+        width: 300px;
+        height: 300px;
+        border-radius: 100%;
+        margin: 0 auto;
+    }
+}
+.users .repositor{
+   width: 100%;
+  
+
+    .top_menu{
+        display: flex;
+        width: 100%;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        
+        
+        a{
+            padding: 10px 30px;
+            text-decoration: none;
+          
+            h4{
+                font-weight: normal;
+                display: flex;
+                align-items: center;
+                svg{
+                    margin-right: 5px;
+                }
+            }
+
+        }
+        a:hover{
+            border-radius: 10px;
+            background: #d0d7de;
+        }
+    }
+
+    .repos_block_show{
+        width: 100%;
+        padding: 10px;
+       
+    }
+}
+
+.popular{
+    width: 100%;
+    height: 310px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-left: 20px;
+
+    .pop{
+        height: 90px;
+        border-radius:10px;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border: 1px solid rgb(204, 202, 202);
+        -webkit-border-radius:10px;
+        -moz-border-radius:10px;
+        -ms-border-radius:10px;
+        -o-border-radius:10px;
+        
+}
+}
